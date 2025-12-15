@@ -28,10 +28,7 @@ This update introduces significant functional and cosmetic enhancements to the D
     * 🟥 **Red:** < 2 days remaining.
     * ⬛ **Black:** Date passed.
 * **Dynamic Iconography:** The status column now renders specific icons (Spanner 🔧, Hat 🧢, Settings ⚙️) based on the numeric data value (**Point 11**).
-* **Toolbar View Switchers:** Defined logic for top-right icons (**Point 8**):
-    * ☰ **List Icon:** Switches to standard Grid View (Default).
-    * 🗺️ **Map Icon:** Placeholder for Geographic Asset Tracking view.
-    * 🧮 **Grid/Calc Icon:** Placeholder for Pivot/Analytics Report view.
+* **Toolbar View Switchers:** Regarding the top-right icons (**Point 8**): These were added for future implementation (e.g., Map or Analytics views) but have been removed from the current build for some reason.
 
 ## 🛠️ Tech Stack
 * **Framework:** Next.js
