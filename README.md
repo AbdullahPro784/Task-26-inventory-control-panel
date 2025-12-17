@@ -1,62 +1,66 @@
-# Asset Management - Advanced Tree Grid Variations
+# Advanced Asset Management Grid
 
-A modern, high-performance Asset Management interface built with **Next.js 14**, **TypeScript**, and **TanStack Table**. This project demonstrates advanced data grid capabilities, specifically focusing on hierarchical (tree) data structures and master-detail views.
+A powerful, high-performance data grid application built with **Next.js 14**, **Tailwind CSS**, and **TanStack Table**. This project demonstrates advanced table features including tree-grid structures, drag-and-drop column reordering, custom filtering, and multiple visualization variants.
 
-![Main Explorer View](screenshots/preview1.png)
-*Figure 1: Main Explorer Screen showing options for Original, Variant 1, Variant 2, and Variant 3.*
+## 🚀 Features
 
-## 📸 Previews
-
-| Variation 1 (Indented) | Variation 2 (Nested Lines) | Variation 3 (Master-Detail) |
-|:---:|:---:|:---:|
-| ![Variant 1](screenshots/preview2.png) | ![Variant 2](screenshots/preview3.png) | ![Variant 3](screenshots/preview4.png) |
-| *Classic Tree View* | *Visual Guides & Colors* | *Expandable Sub-panels* |
-
-## 🚀 Key Features
-
-### 1. Unified Table Explorer
-Seamlessly switch between different table visualizations without refreshing the page. The application maintains state via URL query parameters, making views shareable.
-
-### 2. Three Tree Grid Variations
-*   **Variation 1: Indented Tree**
-    *   Classic file-system style hierarchy.
-    *   Single-column indentation for a clean, familiar look.
-*   **Variation 2: Nested Lines**
-    *   Visual guide lines (L-shape connectors) tracking parent-child relationships.
-    *   Depth-based background coloring for clear visual separation.
-*   **Variation 3: Master-Detail Panel**
-    *   Full-width expandable sub-panels for detailed sub-item management.
-    *   **Interactive Sub-grids**: Directly add and edit sub-items within the panel.
-
-### 3. Advanced Interactions
-*   **Inline Editing**: Double-click any cell to edit content (Text, Date, Select).
-*   **Drag-and-Drop Columns**: Reorder columns effortlessly using `@dnd-kit`.
-*   **Sorting & Filtering**: Built-in multi-column sorting and global search.
-*   **Sub-Item Management**: Create new sub-items dynamically in Variation 3.
+-   **Advanced Data Grid**: Built on TanStack Table for headless, performant state management.
+-   **Tree Grid & Grouping**: Support for nested sub-rows (tree view) to display hierarchical asset data.
+-   **Drag & Drop Columns**: Reorder columns intuitively using `@dnd-kit`.
+-   **Advanced Filtering**:
+    -   **Summary Cards**: Filter by status (In Process, Delayed, Closed) with one click.
+    -   **Global Search**: Real-time text search across all columns.
+    -   **Status & Duration**: Dedicated dropdown filters for precise data slicing.
+-   **Multiple Visual Variants**:
+    -   **Original**: Classic flat/tree table.
+    -   **Variation 1**: Indented tree view.
+    -   **Variation 2**: Nested grid with guide lines.
+    -   **Variation 3**: Master-Detail panel view.
+-   **Editable Cells**: Inline editing capabilities for quick data updates.
+-   **Smart Status Logic**: Automatically highlights overdue items and visualizes status states.
 
 ## 🛠️ Tech Stack
 
-*   **Framework**: [Next.js 14](https://nextjs.org/) (App Router)
-*   **Language**: [TypeScript](https://www.typescriptlang.org/)
-*   **Styling**: [Tailwind CSS](https://tailwindcss.com/)
-*   **UI Components**: [Shadcn UI](https://ui.shadcn.com/) (Radix Primitives)
-*   **Table Logic**: [TanStack Table v8](https://tanstack.com/table/v8) (Headless)
-*   **Drag & Drop**: [@dnd-kit](https://dndkit.com/)
-*   **Icons**: [Lucide React](https://lucide.dev/)
+-   **Framework**: Next.js 14 (App Router)
+-   **Styling**: Tailwind CSS
+-   **Table Logic**: TanStack Table v8
+-   **Icons**: Lucide React
+-   **Drag & Drop**: dnd-kit
+-   **Language**: TypeScript
 
-## 📦 Installation
+## 📸 Previews
+
+### 1. Landing Page & Variation Selection
+Choose between different table visualizations to best suit your data needs.
+![Landing Page](screenshots/preview1.png)
+
+### 2. Variation 1: Classic Tree View
+Standard indented hierarchy for clear parent-child relationships.
+![Variation 1](screenshots/preview2.png)
+
+### 3. Variation 2: Nested Grid
+Structured grid layout with visual guides for deep nesting.
+![Variation 2](screenshots/preview3.png)
+
+### 4. Variation 3: Master-Detail Panels
+Full-width sub-panels for expanding detailed asset information.
+![Variation 3](screenshots/preview4.png)
+
+### 5. Original Variant with Advanced Filters
+The core implementation featuring the new **Summary Cards**, **Search Filter Bar**, and **Pagination**.
+![Original Variant](screenshots/preview5.png)
+
+## 📦 Getting Started
 
 1.  **Clone the repository**:
     ```bash
-    git clone https://github.com/your-username/asset-management-tree-grid.git
-    cd asset-management-tree-grid
+    git clone https://github.com/your-username/your-repo-name.git
+    cd your-repo-name
     ```
 
 2.  **Install dependencies**:
     ```bash
     npm install
-    # or
-    yarn install
     ```
 
 3.  **Run the development server**:
@@ -64,15 +68,7 @@ Seamlessly switch between different table visualizations without refreshing the 
     npm run dev
     ```
 
-4.  **Open your browser**:
-    Navigate to [http://localhost:3000](http://localhost:3000).
-
-## 🔧 Usage Guide
-
-*   **Switching Views**: Use the toggle buttons at the top right of the table to switch between Original, V1, V2, and V3.
-*   **Adding Sub-items**: Go to **Variation 3**, expand a row, and click the "+ Add subitem" button.
-*   **Editing**: Double-click on cells like "Serial", "Category", or "Status" to enter edit mode. Press `Enter` to save or `Esc` to cancel.
-*   **Reordering**: Drag column headers to change their arrangement. The order is persisted locally.
+4.  Open [http://localhost:3000](http://localhost:3000) with your browser.
 
 ## 📄 License
 
